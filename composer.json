@@ -1,0 +1,45 @@
+{
+    "name": "t4web/filesystem",
+    "description": "Wrapper over filesystem PHP functions",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "filesystem"
+    ],
+    "homepage": "https://github.com/t4web/Filesystem",
+    "authors": [
+        {
+            "name": "Max Gulturyan",
+            "email": "gulturyan@gmail.com",
+            "homepage": "http://about.me/maxgu"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+
+        "symfony/filesystem": "~3.0.3"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "^4.8",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "T4web\\Filesystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "T4web\\FilesystemTest\\": "tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs",
+            "@test"
+        ],
+        "cs": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always"
+    }
+}
