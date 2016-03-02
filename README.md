@@ -52,3 +52,19 @@ $filesystem->tempnam($dir, $prefix);
 $filesystem->dumpFile($filename, $content);
 
 ```
+
+# Installation
+
+Add this project in your composer.json:
+
+```json
+"require": {
+    "t4web/filesystem": "~1.0.0"
+}
+```
+
+Now tell composer to download Authentication by running the command:
+
+```bash
+$ php composer.phar update
+```
